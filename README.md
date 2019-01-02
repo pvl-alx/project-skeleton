@@ -30,6 +30,7 @@ apt install curl git mc
 
 ### RUN:
 ```bash
+mv .env.dist .etc
 #dev
 docker-compose up --build
 #prod
