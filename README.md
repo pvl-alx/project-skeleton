@@ -22,13 +22,14 @@ All application files folder contains in public_html
 # Instaling
 * [docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 * [docker-compose](https://docs.docker.com/compose/install/#install-compose)
-### docker prepare
+### Docker prepare
 ```bash
 apt update
 apt install curl git mc
 ```
 
-### RUN:
+### Run:
+make sure that you didn't use containers name (docker-compose.yml) before
 ```bash
 mv .env.dist .env
 #dev
@@ -37,7 +38,7 @@ docker-compose up --build
 docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
 ```
 
-### prepare libs
+### Prepare libs
 ```bash
 docker-compose exec php bash
 composer install
