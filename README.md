@@ -29,7 +29,7 @@ apt install curl git mc
 ```
 
 ### Run:
-make sure that you didn't use containers name (docker-compose.yml) before
+make sure that you didn't use container_name (docker-compose.yml) before
 ```bash
 mv .env.dist .env
 #dev
